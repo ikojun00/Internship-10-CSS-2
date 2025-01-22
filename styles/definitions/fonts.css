@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "PPNeueMontrealMono";
+  src: url("../../assets/fonts/NeueMontreal/PPNeueMontrealMono-Book.otf")
+    format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "PPNeueMachina";
+  src: url("../../assets/fonts/NeueMachina/PPNeueMachina-PlainRegular.otf")
+    format("opentype");
+  font-size: 500;
+}
+
+@font-face {
+  font-family: "PPNeueMachina";
+  src: url("../../assets/fonts/NeueMachina/PPNeueMachina-PlainUltrabold.otf")
+    format("opentype");
+  font-weight: 800;
+}

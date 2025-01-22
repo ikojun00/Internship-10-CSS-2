@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "PPNeueMachina";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 80px; /*stavio sam 80px jer mi se 120px cini preveliko*/
+  line-height: 90px;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+  text-align: center;
+}

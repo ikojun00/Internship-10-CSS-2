@@ -1,0 +1,5 @@
+@import "./definitions/global.css";
+@import "./definitions/colors.css";
+@import "./definitions/fonts.css";
+
+/*za svaki section poseban css file i onda ga samo importat ovdje*/
