@@ -1,0 +1,51 @@
+#tldr-section {
+  background: url("../../assets/images/tldr.jpg") no-repeat center top;
+  padding: 20rem 15rem;
+  color: var(--white);
+  position: relative;
+}
+
+#tldr-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#tldr-text p {
+  text-transform: uppercase;
+}
+
+#tldr-dump {
+  position: absolute;
+  top: -15rem;
+  right: 0;
+  transform: scale(0.5);
+}
+
+#tldr-duck {
+  position: absolute;
+  left: -20rem;
+  transform: scale(-1, 1) rotate(-10deg);
+}
+
+#tldr-duck img {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #tldr-section {
+    padding: 10rem 5rem;
+  }
+
+  #tldr-dump {
+    right: -10rem;
+    transform: scale(0.3);
+  }
+
+  #tldr-duck {
+    left: -25rem;
+    bottom: -10rem;
+    transform: scale(-0.7, 0.7) rotate(-10deg);
+  }
+}
