@@ -13,6 +13,7 @@
   z-index: 2;
   width: 100%;
 }
+
 #footer-background {
   background-color: var(--black-info);
   background-image: url("../../assets/images/background-texture.png");
@@ -34,25 +35,67 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 5rem;
   gap: 0.5rem;
 }
 
-#footer-logos,
-#footer-logos-mobile {
+#footer-text button {
+  background: none;
+  padding: 1rem;
+  border: none;
+  transition: background-color 0.5s ease;
+}
+
+#footer-text a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: "PPNeueMachina";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+}
+
+#footer-text button:hover {
+  background-color: var(--black-70);
+}
+
+#footer-logos {
   display: flex;
   justify-content: center;
-  padding: 0.1rem;
+  gap: 0.5rem;
   border-bottom: 3px dotted var(--white-70);
 }
 
-#footer-logos-mobile {
-  display: none;
+#footer-logos a {
+  position: relative;
+  width: 10rem;
+  top: 2rem;
+  transition: top 0.5s ease;
 }
 
-#footer-logos img,
-#footer-logos-mobile img {
-  position: relative;
-  top: 2rem;
+#footer-logos a:hover {
+  top: 1rem;
+}
+
+#footer-logos img {
+  width: 100%;
+}
+
+#footer-logos a:first-of-type {
+  top: 0;
+}
+
+#footer-logos a:first-of-type:hover {
+  top: -1rem;
+}
+
+#footer-logos a:nth-of-type(3) {
+  top: -1rem;
+}
+
+#footer-logos a:nth-of-type(3):hover {
+  top: -2rem;
 }
 
 #footer-container p {
@@ -66,9 +109,6 @@
 }
 
 @media (max-width: 1024px) {
-  #footer-logos img {
-    width: 80%;
-  }
   #footer-container p {
     font-size: 14px;
     text-align: center;
@@ -80,6 +120,9 @@
     padding: 2rem 1rem;
     gap: 2rem;
   }
+  #footer-divider {
+    top: -20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -87,17 +130,22 @@
     font-size: 64px;
     padding: 0 1rem;
   }
-  #footer-logos-mobile {
-    display: flex;
-    padding: 0;
-  }
   #footer-container {
     padding: 10rem 0 0 0;
   }
-  #footer-logos-mobile img {
-    width: 80%;
+  #footer-divider {
+    top: -10px;
   }
   #footer-logos {
-    display: none;
+    gap: 0;
+  }
+  #footer-logos a {
+    width: 25%;
+  }
+  #footer-logos img:first-of-type {
+    top: -1rem;
+  }
+  #footer-logos img:nth-of-type(3) {
+    top: -2rem;
   }
 }
