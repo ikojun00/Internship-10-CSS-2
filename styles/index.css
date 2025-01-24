@@ -1,8 +1,8 @@
 @import "./definitions/global.css";
 @import "./definitions/colors.css";
 @import "./definitions/fonts.css";
-@import "./definitions/faq.css";
-@import "./definitions/tldr.css";
-@import "./definitions/footer.css";
+@import "./sections/faq.css";
+@import "./sections/tldr.css";
+@import "./sections/footer.css";
 
 /*za svaki section poseban css file i onda ga samo importat ovdje*/
