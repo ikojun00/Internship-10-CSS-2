@@ -27,6 +27,7 @@
   position: absolute;
   left: -20rem;
   transform: scale(-1, 1) rotate(-10deg);
+  z-index: 4;
 }
 
 #tldr-duck img {
