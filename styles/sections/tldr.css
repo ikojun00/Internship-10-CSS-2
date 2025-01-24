@@ -12,6 +12,27 @@
   gap: 0.5rem;
 }
 
+#tldr-text button {
+  background: none;
+  padding: 1rem;
+  border: none;
+  transition: background-color 0.5s ease;
+}
+
+#tldr-text a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: "PPNeueMachina";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+}
+
+#tldr-text button:hover {
+  background-color: var(--red);
+}
+
 #tldr-text p {
   text-transform: uppercase;
 }
