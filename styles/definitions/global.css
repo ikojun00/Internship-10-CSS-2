@@ -25,3 +25,10 @@ h2 {
   text-transform: uppercase;
   text-align: center;
 }
+button {
+  font-family: "PPNeueMontrealMono";
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
