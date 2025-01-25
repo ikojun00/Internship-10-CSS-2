@@ -40,9 +40,50 @@
   border-bottom: 3px dotted var(--white-second);
 }
 
-.faq-item:first-of-type {
-  display: flex;
+.faq-item:has(#faq-trigger-1:checked) {
   align-items: flex-start;
+}
+
+.faq-item .faq-label {
+  order: 2;
+}
+
+.faq-label {
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+
+.faq-item input {
+  display: none;
+}
+
+.faq-label .close-img {
+  display: none;
+}
+
+#faq-trigger-1:checked + .faq-label .open-img,
+#faq-trigger-2:checked + .faq-label .open-img,
+#faq-trigger-3:checked + .faq-label .open-img,
+#faq-trigger-4:checked + .faq-label .open-img,
+#faq-trigger-5:checked + .faq-label .open-img {
+  display: none;
+}
+
+#faq-trigger-1:checked + .faq-label .close-img,
+#faq-trigger-2:checked + .faq-label .close-img,
+#faq-trigger-3:checked + .faq-label .close-img,
+#faq-trigger-4:checked + .faq-label .close-img,
+#faq-trigger-5:checked + .faq-label .close-img {
+  display: block;
+}
+
+.faq-text > p {
+  display: none;
+}
+
+#faq-trigger-1:checked ~ .faq-text > p {
+  display: flex;
 }
 
 .faq-item:last-of-type {
@@ -69,6 +110,9 @@
 @media (max-width: 768px) {
   #faq-container {
     padding: 2rem;
+  }
+  .faq-label {
+    display: none;
   }
   #faq-container h2 {
     font-size: 64px;
