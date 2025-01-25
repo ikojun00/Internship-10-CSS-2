@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -23,4 +24,11 @@ h2 {
   letter-spacing: -5px;
   text-transform: uppercase;
   text-align: center;
+}
+button {
+  font-family: "PPNeueMontrealMono";
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
