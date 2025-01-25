@@ -2,11 +2,13 @@
   color: var(--white-70);
 }
 
-#faq-section h2 {
-  color: var(--white);
+#faq-divider {
+  position: absolute;
+  top: -30px;
+  z-index: 2;
+  width: 100%;
 }
 
-#faq-divider,
 #faq-background {
   background-color: var(--black-info);
   background-image: url("../../assets/images/background-texture.png");
@@ -22,6 +24,7 @@
   display: flex;
   flex-direction: column;
   padding: 5rem;
+  padding-bottom: 10rem;
 }
 
 #faq-container h2 {
@@ -34,7 +37,7 @@
   align-items: center;
   gap: 8rem;
   padding: 2rem 0;
-  border-bottom: 3px dotted var(--white-70);
+  border-bottom: 3px dotted var(--white-second);
 }
 
 .faq-item:first-of-type {
