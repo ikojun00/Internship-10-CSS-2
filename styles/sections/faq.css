@@ -1,0 +1,135 @@
+#faq-section {
+  color: var(--white-70);
+  position: relative;
+  margin-top: 20px;
+}
+
+#faq-divider {
+  position: absolute;
+  top: -20px;
+  z-index: 2;
+  width: 100%;
+}
+
+#faq-background {
+  background-color: var(--black-info);
+  background-image: url("../../assets/images/background-texture.png");
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+}
+
+#faq-divider > img {
+  width: 100%;
+}
+
+#faq-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  padding-bottom: 10rem;
+}
+
+#faq-container h2 {
+  padding: 3rem 0rem;
+}
+
+.faq-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
+  padding: 2rem 0;
+  border-bottom: 3px dotted var(--white-second);
+}
+
+.faq-item:has(#faq-trigger-1:checked) {
+  align-items: flex-start;
+}
+
+.faq-item .faq-label {
+  order: 2;
+}
+
+.faq-label {
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+
+.faq-item input {
+  display: none;
+}
+
+.faq-label .close-img {
+  display: none;
+}
+
+#faq-trigger-1:checked + .faq-label .open-img,
+#faq-trigger-2:checked + .faq-label .open-img,
+#faq-trigger-3:checked + .faq-label .open-img,
+#faq-trigger-4:checked + .faq-label .open-img,
+#faq-trigger-5:checked + .faq-label .open-img {
+  display: none;
+}
+
+#faq-trigger-1:checked + .faq-label .close-img,
+#faq-trigger-2:checked + .faq-label .close-img,
+#faq-trigger-3:checked + .faq-label .close-img,
+#faq-trigger-4:checked + .faq-label .close-img,
+#faq-trigger-5:checked + .faq-label .close-img {
+  display: block;
+}
+
+.faq-text > p {
+  display: none;
+}
+
+#faq-trigger-1:checked ~ .faq-text > p {
+  display: flex;
+}
+
+.faq-item:last-of-type {
+  border-bottom: none;
+}
+
+.faq-text {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+}
+
+.faq-number {
+  width: 20px;
+  height: 10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: var(--red);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #faq-container {
+    padding: 2rem;
+  }
+  .faq-label {
+    display: none;
+  }
+  #faq-container h2 {
+    font-size: 64px;
+    padding: 1rem 0rem;
+  }
+  .faq-item {
+    gap: 0.5rem;
+  }
+  .faq-text h3 {
+    font-size: 16px;
+  }
+  .faq-text p {
+    font-size: 14px;
+  }
+  .faq-item img {
+    display: none;
+  }
+}

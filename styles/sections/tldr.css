@@ -1,0 +1,73 @@
+#tldr-section {
+  background: url("../../assets/images/tldr.jpg") no-repeat center top;
+  padding: 20rem 15rem;
+  color: var(--white);
+  position: relative;
+}
+
+#tldr-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#tldr-text button {
+  background: none;
+  padding: 1rem;
+  border: none;
+  transition: background-color 0.5s ease;
+}
+
+#tldr-text a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: "PPNeueMachina";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+}
+
+#tldr-text button:hover {
+  background-color: var(--red);
+}
+
+#tldr-text p {
+  text-transform: uppercase;
+}
+
+#tldr-dump {
+  position: absolute;
+  top: -15rem;
+  right: 0;
+  transform: scale(0.5);
+}
+
+#tldr-duck {
+  position: absolute;
+  left: -20rem;
+  transform: scale(-1, 1) rotate(-10deg);
+  z-index: 4;
+}
+
+#tldr-duck img {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #tldr-section {
+    padding: 10rem 5rem;
+  }
+
+  #tldr-dump {
+    right: -10rem;
+    transform: scale(0.3);
+  }
+
+  #tldr-duck {
+    left: -25rem;
+    bottom: -10rem;
+    transform: scale(-0.7, 0.7) rotate(-10deg);
+  }
+}
