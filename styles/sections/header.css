@@ -119,7 +119,7 @@ nav {
   padding: 24px;
   display: flex;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 99;
 }
 
 nav .nav-btn {
@@ -246,7 +246,7 @@ nav p {
     background-image: url("../../assets/images/HeroBackground.jpg");
     background-size: cover;
     background-position: center;
-    z-index: 100;
+    z-index: 5;
     padding: 16px;
     text-align: left;
   }

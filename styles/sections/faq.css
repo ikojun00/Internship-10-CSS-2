@@ -110,6 +110,12 @@
 }
 
 @media (max-width: 768px) {
+  #faq-section {
+    margin-top: 10px;
+  }
+  #faq-divider {
+    top: -10px;
+  }
   #faq-container {
     padding: 2rem;
   }
