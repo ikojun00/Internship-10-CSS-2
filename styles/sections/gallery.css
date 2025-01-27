@@ -1,0 +1,172 @@
+#gallery-header {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  gap: 15rem;
+  align-items: center;
+  background: url("../../assets/images/rewind.webp") no-repeat center top;
+  background-size: cover;
+}
+
+#gallery-header > h2 {
+  font-weight: 500;
+  line-height: 87.46px;
+  letter-spacing: -3.27974271774292px;
+  text-align: center;
+}
+
+#gallery-header a {
+  align-self: flex-end;
+}
+
+#gallery-header button {
+  background: none;
+  padding: 1rem;
+  border: none;
+  transition: background-color 0.5s ease;
+}
+
+#gallery-header button a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+#gallery-header button:hover {
+  background-color: var(--black-70);
+}
+
+#gallery-container {
+  margin-top: -2rem;
+  display: grid;
+  grid-template-rows: 120px 120px 1fr;
+}
+
+.gallery-divider {
+  position: relative;
+  top: 1.5rem;
+}
+
+.gallery-item:nth-of-type(2) .gallery-divider {
+  transform: rotate(-1deg);
+}
+
+.gallery-item:nth-of-type(3) .gallery-divider {
+  transform: rotate(1deg);
+}
+
+.gallery-divider > img {
+  width: 100%;
+}
+
+.gallery-article {
+  display: flex;
+  gap: 5rem;
+  padding: 2rem 5rem;
+  background-color: var(--white);
+}
+
+.gallery-article:nth-of-type(3) {
+  z-index: 3;
+}
+
+.gallery-item:nth-of-type(2) > .gallery-article {
+  background-color: var(--black-info);
+  background-image: url("../../assets/images/background-texture.webp");
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+}
+
+.gallery-article > .gallery-text {
+  width: 50%;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: var(--black-70);
+  border-left: 3px dotted var(--black-70);
+  padding-left: 2rem;
+}
+
+.gallery-item:nth-of-type(2) .gallery-text {
+  color: var(--white-70);
+}
+
+.gallery-author {
+  width: 15rem;
+}
+
+.gallery-author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-family: "PPNeueMontrealMono";
+  width: 80%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: var(--black-70);
+  text-transform: uppercase;
+  padding-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  #gallery-header {
+    padding: 2rem;
+    padding-top: 4rem;
+  }
+  #gallery-header img {
+    width: 2rem;
+  }
+  #gallery-header > h2 {
+    font-size: 64px;
+  }
+  .gallery-article {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
+    padding: 2rem;
+  }
+
+  .gallery-divider > img {
+    height: 2rem;
+  }
+
+  .gallery-article > .gallery-text {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    border: 0;
+    padding: 0;
+    border-bottom: 3px dotted var(--black-70);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+  .gallery-item:nth-of-type(2) .gallery-divider {
+    transform: rotate(0deg);
+  }
+
+  .gallery-item:nth-of-type(3) .gallery-divider {
+    transform: rotate(0deg);
+  }
+
+  .gallery-author {
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+  }
+
+  .gallery-author > img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .gallery-author-info {
+    padding-top: 0;
+    padding-left: 1rem;
+  }
+}
