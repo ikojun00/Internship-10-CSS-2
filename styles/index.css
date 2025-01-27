@@ -1,6 +1,7 @@
 @import "./definitions/global.css";
 @import "./definitions/colors.css";
 @import "./definitions/fonts.css";
+@import "./sections/gallery.css";
 @import "./sections/faq.css";
 @import "./sections/tldr.css";
 @import "./sections/footer.css";

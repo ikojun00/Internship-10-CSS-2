@@ -4,16 +4,22 @@
   margin-top: 20px;
 }
 
+#faq-section h2 {
+  font-weight: 500;
+  line-height: 144px;
+  letter-spacing: -5.024630546569824px;
+}
+
 #faq-divider {
   position: absolute;
   top: -20px;
-  z-index: 2;
+  z-index: 4;
   width: 100%;
 }
 
 #faq-background {
   background-color: var(--black-info);
-  background-image: url("../../assets/images/background-texture.png");
+  background-image: url("../../assets/images/background-texture.webp");
   background-repeat: repeat;
   background-blend-mode: multiply;
 }
@@ -101,8 +107,8 @@
 }
 
 .faq-number {
-  width: 20px;
-  height: 10px;
+  width: 40px;
+  height: 20px;
   padding: 5px 10px;
   border-radius: 50%;
   background-color: var(--red);

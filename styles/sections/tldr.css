@@ -1,8 +1,14 @@
 #tldr-section {
-  background: url("../../assets/images/tldr.jpg") no-repeat center top;
+  background: url("../../assets/images/tldr.webp") no-repeat center top;
   padding: 20rem 15rem;
   color: var(--white);
   position: relative;
+}
+
+#tldr-section h2 {
+  font-weight: 500;
+  line-height: 120px;
+  letter-spacing: -5.024630546569824px;
 }
 
 #tldr-text {
@@ -56,6 +62,12 @@
 }
 
 @media (max-width: 768px) {
+  #tldr-section h2 {
+    font-size: 64px;
+    line-height: 62px;
+    letter-spacing: -3.27974271774292px;
+  }
+
   #tldr-section {
     padding: 10rem 5rem;
   }
