@@ -1,0 +1,155 @@
+.info-container {
+  margin-top: 25px;
+  margin-bottom: 200px;
+  width: 100%;
+  padding: 0 233px 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  column-gap: 190px;
+  row-gap: 120px;
+  position: relative;
+}
+
+.info-duck {
+  grid-area: 2/1/-1/1;
+}
+
+.info-duck img {
+  position: absolute;
+  top: 90px;
+  width: 30%;
+}
+
+.info-text {
+  grid-area: 1/2/2/2;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -1px;
+  color: var(--black-70);
+}
+
+.info-mini-header {
+  grid-area: 1/1/1/1;
+  max-width: 150px;
+  font-family: "PPNeueMontrealMono";
+}
+
+.info-statistic {
+  grid-area: 2/2/4/2;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  column-gap: 110px;
+  row-gap: 125px;
+}
+
+.info-statistic .info-number {
+  font-size: 100px;
+  letter-spacing: -5px;
+  line-height: 1;
+  color: var(--red);
+}
+
+.info-statistic .info-statistic-text {
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+
+/*Film part*/
+
+.film-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.film-container img {
+  width: 23%;
+}
+
+@media (max-width: 1024px) {
+  .info-container {
+    padding: 0 2rem 0 2rem;
+    grid-template-columns: 1fr;
+
+    column-gap: 90px;
+    row-gap: 85px;
+    position: relative;
+  }
+
+  .film-container {
+    flex-wrap: wrap;
+    row-gap: 32px;
+  }
+
+  .film-container img {
+    width: 48%;
+  }
+
+  .info-duck {
+    grid-area: 4/1/4/1;
+    position: relative;
+  }
+
+  .info-duck img {
+    position: absolute;
+    top: -350px;
+    right: 120px;
+    width: 40%;
+    transform: rotate(10deg);
+    z-index: -1;
+  }
+
+  #info-section {
+    overflow: hidden;
+  }
+
+  .info-text {
+    grid-area: auto;
+  }
+
+  .info-mini-header {
+    grid-area: auto;
+  }
+
+  .info-statistic {
+    grid-area: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    margin-top: 32px;
+    padding-inline: 1rem;
+    margin-bottom: 80px;
+  }
+
+  .info-duck img {
+    top: -300px;
+    right: -100px;
+    width: 280px;
+  }
+
+  .film-container {
+    row-gap: 16px;
+  }
+  .info-statistic {
+    column-gap: 65px;
+  }
+  .info-statistic .info-number {
+    font-size: 72px;
+  }
+
+  .info-text {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+  }
+
+  .info-mini-header {
+    max-width: 200px;
+  }
+}
