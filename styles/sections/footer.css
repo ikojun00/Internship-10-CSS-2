@@ -3,6 +3,12 @@
   position: relative;
 }
 
+#footer-section h2 {
+  font-weight: 500;
+  line-height: 120px;
+  letter-spacing: -5.024630546569824px;
+}
+
 #footer-divider {
   position: absolute;
   top: -30px;
@@ -12,7 +18,7 @@
 
 #footer-background {
   background-color: var(--black-info);
-  background-image: url("../../assets/images/background-texture.png");
+  background-image: url("../../assets/images/background-texture.webp");
   background-repeat: repeat;
   background-blend-mode: multiply;
 }
@@ -124,7 +130,9 @@
 @media (max-width: 768px) {
   #footer-container h2 {
     font-size: 64px;
-    padding: 0 1rem;
+    font-weight: 500;
+    line-height: 62px;
+    letter-spacing: -3.27974271774292px;
   }
   #footer-container {
     padding: 10rem 0 0 0;
