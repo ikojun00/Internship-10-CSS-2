@@ -7,5 +7,4 @@
 
 /*za svaki section poseban css file i onda ga samo importat ovdje*/
 @import "./sections/header.css";
-@import "./sections/nav_bar.css";
 @import "./sections/info.css";
