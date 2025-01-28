@@ -1,0 +1,94 @@
+#register-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 4rem 16rem 4rem;
+  background-color: var(--black-info);
+  background-image: url("../../assets/images/background-texture.webp");
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+}
+
+#register-divider {
+  position: relative;
+  top: 0.5rem;
+}
+
+#register-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#register-divider img {
+  width: 100%;
+}
+
+#register-img img {
+  width: 50%;
+  height: auto;
+  position: relative;
+  top: -5rem;
+  z-index: 2;
+}
+
+#register-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#register-header h2 {
+  font-weight: 500;
+  font-size: 110px;
+  line-height: 144px;
+  letter-spacing: -5.024630546569824px;
+  text-align: left;
+  margin-top: 0;
+}
+
+#register-header p {
+  color: var(--white-70);
+  text-transform: uppercase;
+  font-family: "PPNeueMontrealMono";
+  font-size: 12px;
+}
+
+#register-body button {
+  background: none;
+  padding: 1rem;
+  border: none;
+}
+
+#register-body button:hover {
+  background-color: var(--black-70);
+}
+
+#register-body button a {
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  #register-header h2 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  #register-body {
+    padding: 4rem 1rem 8rem 1rem;
+  }
+  #register-img img {
+    width: 80%;
+    top: -3rem;
+  }
+  #register-header h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 80px;
+    letter-spacing: -3px;
+    text-align: center;
+  }
+}
