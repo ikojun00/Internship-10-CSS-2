@@ -1,0 +1,48 @@
+.lectures-photo {
+  background-image: url("../../assets/images/predavanjaPerson.webp");
+  background-size: cover;
+  background-position: center;
+  height: 1500px;
+  width: 100%;
+  padding-top: 30rem;
+}
+
+.lectures-list {
+  padding-top: 52px;
+  width: 100%;
+  position: relative;
+}
+
+.section-divider {
+  position: absolute;
+  top: -20px;
+  width: 100%;
+}
+
+.section-divider img {
+  width: 100%;
+}
+
+.lectures-navigation {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+#fridayDate,
+#allFilter {
+  color: var(--red);
+  border-bottom: 3px solid var(--red);
+}
+
+.lectures-navigation p {
+  padding: 1rem 1.5rem;
+}
+
+.dates-wrapper {
+  display: flex;
+}
+
+.fields-filters {
+  display: flex;
+}
