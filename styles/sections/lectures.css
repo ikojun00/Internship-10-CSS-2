@@ -64,17 +64,20 @@
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.25fr;
   cursor: pointer;
-  animation: slideInLeft 0.6s ease-out;
+  opacity: 0;
+  animation: slideLeft ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 100% cover 50%;
 }
 
-@keyframes slideInLeft {
+@keyframes slideLeft {
   from {
-    transform: translateX(-100%);
     opacity: 0;
+    transform: translateX(-100%);
   }
   to {
-    transform: translateX(0);
     opacity: 1;
+    transform: translateX(0);
   }
 }
 
