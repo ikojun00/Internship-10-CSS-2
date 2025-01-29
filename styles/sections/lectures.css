@@ -167,7 +167,7 @@
   }
   .dates-wrapper {
     column-gap: 16px;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
   }
 
