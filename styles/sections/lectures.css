@@ -41,8 +41,84 @@
 
 .dates-wrapper {
   display: flex;
+  column-gap: 8px;
 }
 
 .fields-filters {
   display: flex;
+  column-gap: 8px;
+}
+
+.all-lectures {
+  margin-top: 6.125rem;
+}
+
+.all-lectures > *:not(:last-child) {
+  border-bottom: 2px dotted var(--black-30);
+}
+
+.single-lecture {
+  padding: 35px 105px 42px 77px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+
+.single-lecture:hover > .photo-on-hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.single-lecture .time p:nth-child(2) {
+  color: var(--black-60);
+}
+
+.photo-on-hover {
+  display: hidden;
+  position: absolute;
+  opacity: 0;
+  right: 220px;
+  top: 0;
+  transition: opacity 0.5s ease;
+}
+
+.field-icon {
+  width: auto;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--red);
+  color: var(--white);
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.plus-icon {
+  text-align: right;
+}
+
+.lecturer,
+.time p:nth-child(2) {
+  margin-top: 8px;
+}
+
+.question-icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.question {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -1%;
+  margin-left: 16px;
+}
+
+.lecture-description {
+  text-align: left;
+}
+
+.lecturer {
+  text-transform: uppercase;
+  font-family: "PPNeueMontrealMono";
+  color: var(--black-60);
 }
