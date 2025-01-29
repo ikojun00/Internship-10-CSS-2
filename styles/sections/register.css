@@ -38,15 +38,6 @@
   align-items: center;
 }
 
-#register-header h2 {
-  font-weight: 500;
-  font-size: 110px;
-  line-height: 144px;
-  letter-spacing: -5.024630546569824px;
-  text-align: left;
-  margin-top: 0;
-}
-
 #register-header p {
   color: var(--white-70);
   text-transform: uppercase;
@@ -70,12 +61,6 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 1024px) {
-  #register-header h2 {
-    font-size: 80px;
-  }
-}
-
 @media (max-width: 768px) {
   #register-body {
     padding: 4rem 1rem 8rem 1rem;
@@ -83,12 +68,5 @@
   #register-img img {
     width: 80%;
     top: -3rem;
-  }
-  #register-header h2 {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 80px;
-    letter-spacing: -3px;
-    text-align: center;
   }
 }

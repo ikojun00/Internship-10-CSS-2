@@ -19,8 +19,9 @@ body {
 }
 
 h2 {
-  font-size: 80px; /*stavio sam 80px jer mi se 120px cini preveliko*/
+  font-size: 120px; /*stavio sam 80px jer mi se 120px cini preveliko*/
   line-height: 90px;
+  font-weight: 500;
   letter-spacing: -5px;
   text-transform: uppercase;
   text-align: center;
@@ -34,8 +35,23 @@ button {
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 80px;
+    letter-spacing: -3px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding-inline: 1rem;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 80px;
+    letter-spacing: -3px;
+    text-align: center;
   }
 }
