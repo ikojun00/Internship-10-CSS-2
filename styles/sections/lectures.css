@@ -156,6 +156,9 @@
   .single-lecture {
     padding: 35px 0px 42px 0px;
   }
+  .single-lecture:hover > .photo-on-hover {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -193,10 +196,6 @@
 
   .lecturer {
     margin-left: 60px;
-  }
-
-  .single-lecture:hover > .photo-on-hover {
-    display: none;
   }
 
   .time .time-wrapper {
