@@ -39,7 +39,7 @@
 }
 
 #speakers button:hover {
-  background-color: var(--red);
+  background-color: #ff8f78;
 }
 
 #speakers button a {
