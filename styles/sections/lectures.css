@@ -159,6 +159,9 @@
   .single-lecture:hover > .photo-on-hover {
     display: none;
   }
+  .lectures-navigation p {
+    padding: 1rem 1rem;
+  }
 }
 
 @media (max-width: 768px) {

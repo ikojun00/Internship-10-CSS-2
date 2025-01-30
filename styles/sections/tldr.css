@@ -54,13 +54,9 @@
 
 #tldr-duck {
   position: absolute;
-  left: -20rem;
-  transform: scale(-1, 1) rotate(-10deg);
+  bottom: -80px;
+  left: 10px;
   z-index: 4;
-}
-
-#tldr-duck img {
-  width: 50%;
 }
 
 @media (max-width: 768px) {
@@ -80,8 +76,8 @@
   }
 
   #tldr-duck {
-    left: -25rem;
-    bottom: -10rem;
-    transform: scale(-0.7, 0.7) rotate(-10deg);
+    left: -160px;
+    bottom: -160px;
+    transform: scale(0.5);
   }
 }

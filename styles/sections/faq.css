@@ -92,6 +92,10 @@
 
 #faq-trigger-1:checked ~ .faq-text > p {
   display: flex;
+  max-width: 80%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 .faq-item:last-of-type {
@@ -104,6 +108,15 @@
   flex-direction: column;
   gap: 1rem;
   width: 80%;
+}
+
+.faq-text h3 {
+  font-size: 16px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -1px;
+  text-align: left;
 }
 
 .faq-number {

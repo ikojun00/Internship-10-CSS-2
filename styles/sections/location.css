@@ -20,7 +20,9 @@
 }
 
 #location-section-date {
-  padding-top: 2rem;
+  position: relative;
+  padding: 0 4rem;
+  top: 6rem;
   color: var(--white);
   opacity: 0.5;
   font-size: 16rem;
@@ -28,6 +30,7 @@
   line-height: 262.26px;
   letter-spacing: 5.245291709899902px;
   text-align: center;
+  opacity: 0.3;
 }
 
 #location-marking {
@@ -47,7 +50,7 @@
   gap: 10rem;
   padding: 4rem 0;
   margin: 0 4rem;
-  border-bottom: 3px dotted var(--background);
+  border-bottom: 3px dotted var(--white-70);
 }
 
 #location-section-text div {
@@ -77,6 +80,7 @@
 }
 
 #location-section-text h4 {
+  max-width: 50%;
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
@@ -86,7 +90,7 @@
 
 @media (max-width: 1024px) {
   #location-section-date {
-    font-size: 12rem;
+    font-size: 10rem;
   }
 }
 
@@ -121,14 +125,18 @@
   #location-split3 {
     position: relative;
     z-index: 2;
-    top: 40px;
+    top: 60px;
   }
   #location-section-date {
-    padding-top: 0;
+    top: 1rem;
     font-size: 65.49px;
     font-weight: 500;
     line-height: 64.03px;
     letter-spacing: 1.2805230617523193px;
     text-align: center;
+  }
+
+  #location-section-text h4 {
+    max-width: 100%;
   }
 }

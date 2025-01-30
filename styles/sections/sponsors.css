@@ -97,6 +97,7 @@
 }
 
 #sponsors-header h2 {
+  max-width: 50%;
   font-size: 46px;
   font-weight: 500;
   line-height: 48px;
@@ -205,6 +206,9 @@
 }
 
 @media (max-width: 768px) {
+  #sponsors-header h2 {
+    max-width: 100%;
+  }
   #sponsors-header img {
     width: 50%;
   }
