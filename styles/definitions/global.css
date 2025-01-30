@@ -18,6 +18,10 @@ body {
   padding-inline: 2rem;
 }
 
+section {
+  position: relative;
+}
+
 h2 {
   font-size: 120px; /*stavio sam 80px jer mi se 120px cini preveliko*/
   line-height: 90px;
@@ -48,7 +52,7 @@ button {
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 500;
     line-height: 80px;
     letter-spacing: -3px;

@@ -99,12 +99,12 @@
 }
 
 .photo-on-hover {
-  visibility: hidden;
+  display: hidden;
   position: absolute;
   opacity: 0;
   right: 220px;
   top: 0;
-  transition: opacity 0.8s ease;
+  transition: opacity 0.5s ease;
 }
 
 .field-icon {
