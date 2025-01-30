@@ -1,0 +1,130 @@
+#location-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #04544c;
+  padding-top: 10rem;
+  color: var(--white-second);
+}
+
+#location-split3,
+#location-bridge,
+#location-fesb {
+  display: none;
+}
+
+#location-section h2 {
+  position: relative;
+  top: 10rem;
+}
+
+#location-section-date {
+  padding-top: 2rem;
+  color: var(--white);
+  opacity: 0.5;
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: 262.26px;
+  letter-spacing: 5.245291709899902px;
+  text-align: center;
+}
+
+#location-marking {
+  position: relative;
+  top: 20rem;
+  z-index: 2;
+}
+
+#location-bg-image img {
+  width: 100%;
+}
+
+#location-section-text {
+  display: flex;
+  gap: 10rem;
+  padding: 4rem 0;
+  margin: 0 4rem;
+  border-bottom: 3px dotted var(--white-second);
+}
+
+#location-section-text div {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+#location-section-text p {
+  font-family: "PPNeueMontrealMono";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#location-section .location-number {
+  width: 60px;
+  height: 20px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: var(--red);
+  color: var(--white);
+  text-align: center;
+}
+
+#location-section-text h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  #location-section-date {
+    font-size: 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #location-section {
+    padding-top: 0;
+  }
+  #location-section-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+    margin: 0 2rem;
+  }
+  #location-bg-image {
+    display: none;
+  }
+  #location-split3,
+  #location-bridge {
+    display: block;
+  }
+  #location-marking {
+    padding: 0 1rem;
+  }
+  #location-marking img {
+    width: 100%;
+  }
+  #location-bridge img {
+    width: 100%;
+  }
+  #location-split3 {
+    position: relative;
+    z-index: 2;
+    top: 40px;
+  }
+  #location-section-date {
+    padding-top: 0;
+    font-size: 65.49px;
+    font-weight: 500;
+    line-height: 64.03px;
+    letter-spacing: 1.2805230617523193px;
+    text-align: center;
+  }
+}

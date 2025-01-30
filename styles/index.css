@@ -1,14 +1,12 @@
 @import "./definitions/global.css";
 @import "./definitions/colors.css";
 @import "./definitions/fonts.css";
+@import "./sections/header.css";
+@import "./sections/info.css";
+@import "./sections/location.css";
+@import "./sections/sponsors.css";
 @import "./sections/register.css";
 @import "./sections/gallery.css";
 @import "./sections/faq.css";
 @import "./sections/tldr.css";
 @import "./sections/footer.css";
-
-/*za svaki section poseban css file i onda ga samo importat ovdje*/
-@import "./sections/header.css";
-@import "./sections/info.css";
-@import "./sections/lectures.css";
-@import "./sections/speakres.css";
