@@ -187,6 +187,9 @@
 }
 
 @media (max-width: 1024px) {
+  #sponsors-header h2 {
+    max-width: 100%;
+  }
   #golden-items {
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
@@ -206,8 +209,10 @@
 }
 
 @media (max-width: 768px) {
-  #sponsors-header h2 {
-    max-width: 100%;
+  .sponsors-title h2 {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.54px;
   }
   #sponsors-header img {
     width: 50%;
