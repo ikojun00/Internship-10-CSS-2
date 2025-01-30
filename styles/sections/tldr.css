@@ -1,5 +1,7 @@
 #tldr-section {
-  background: url("../../assets/images/tldr.webp") no-repeat center top;
+  background: url("../../assets/images/tldr.webp");
+  background-size: cover;
+  background-position: center;
   padding: 20rem 15rem;
   color: var(--white);
   position: relative;
