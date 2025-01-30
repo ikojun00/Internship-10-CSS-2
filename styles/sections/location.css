@@ -1,4 +1,5 @@
 #location-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,6 +32,8 @@
 
 #location-marking {
   position: relative;
+  display: flex;
+  justify-content: center;
   top: 20rem;
   z-index: 2;
 }
@@ -44,7 +47,7 @@
   gap: 10rem;
   padding: 4rem 0;
   margin: 0 4rem;
-  border-bottom: 3px dotted var(--white-second);
+  border-bottom: 3px dotted var(--background);
 }
 
 #location-section-text div {
@@ -103,13 +106,14 @@
   }
   #location-split3,
   #location-bridge {
+    background-color: #04544c;
     display: block;
   }
   #location-marking {
-    padding: 0 1rem;
+    top: 15rem;
   }
   #location-marking img {
-    width: 100%;
+    width: 50%;
   }
   #location-bridge img {
     width: 100%;

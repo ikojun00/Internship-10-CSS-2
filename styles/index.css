@@ -3,6 +3,8 @@
 @import "./definitions/fonts.css";
 @import "./sections/header.css";
 @import "./sections/info.css";
+@import "./sections/lectures.css";
+@import "./sections/speakres.css";
 @import "./sections/location.css";
 @import "./sections/sponsors.css";
 @import "./sections/register.css";
