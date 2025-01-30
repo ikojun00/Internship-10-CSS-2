@@ -3,6 +3,7 @@
 @import "./definitions/fonts.css";
 @import "./sections/header.css";
 @import "./sections/info.css";
+@import "./sections/location.css";
 @import "./sections/sponsors.css";
 @import "./sections/register.css";
 @import "./sections/gallery.css";
